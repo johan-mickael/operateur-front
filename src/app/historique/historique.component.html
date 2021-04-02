@@ -1,0 +1,15 @@
+<h1>Historique</h1>
+<table border="1" style="text-align: center; width: 100%">
+  <tr>
+    <th width="300">Destinateur</th>
+    <th width="300">Destinataire</th>
+    <th width="400">Duree</th>
+    <th width="500">Date</th>
+  </tr>
+  <tr *ngFor="let historique of data">
+    <td>{{historique.destinateur}} </td>
+    <td>{{historique.destinataire}} </td>
+    <td>{{historique.minute}} min {{historique.seconde}} s</td>
+    <td>{{historique.date}} </td>
+  </tr>
+</table>
